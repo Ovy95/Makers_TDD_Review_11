@@ -7,10 +7,16 @@ class Blunt {
     if(sumArray[1]== "+"){
      total = parseInt(sumArray[0]) + parseInt(sumArray[2])
      return [sum ,total]
-
     }
 
+    if(sumArray[1]== "-"){
+      total = parseInt(sumArray[0]) - parseInt(sumArray[2])
+      return [sum ,total]
+     }
+    
 
   }
+
+  
 
 }
