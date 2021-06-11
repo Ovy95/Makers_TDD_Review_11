@@ -2,11 +2,11 @@ class Blunt {
 
   Calculator(sum){
     // "1 + 1"
-    let total  
+
     let sumArray= sum.split(" ")
+    let total
     if(sumArray[1]== "+"){
-     total = parseInt(sumArray[0]) + parseInt(sumArray[2])
-     return [sum ,total]
+      return this.addition(sum,sumArray)
     }
 
     if(sumArray[1]== "-"){
@@ -25,6 +25,12 @@ class Blunt {
      }
     
 
+  }
+
+
+  addition(sum,sumArray){
+   let total = parseInt(sumArray[0]) + parseInt(sumArray[2])
+     return [sum ,total]
   }
 
 
