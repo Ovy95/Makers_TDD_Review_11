@@ -28,6 +28,12 @@ describe("Blunt", function() {
     })
     
   }) 
+  describe('Devision tests ', function() {
+    it ("16 / 4 returns ['16 / 4', 4]",function() {
+      expect(blunt.Calculator("16 / 4")).toEqual(["16 / 4", 4]);
+    })
+    
+  }) 
 
 
   
