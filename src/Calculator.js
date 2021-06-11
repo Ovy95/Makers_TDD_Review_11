@@ -10,13 +10,11 @@ class Blunt {
     }
 
     if(sumArray[1]== "-"){
-      total = parseInt(sumArray[0]) - parseInt(sumArray[2])
-      return [sum ,total]
+      return this.minus(sum,sumArray)
      }
 
      if(sumArray[1]== "*"){
-      total = parseInt(sumArray[0]) * parseInt(sumArray[2])
-      return [sum ,total]
+       return this.multiple(sum,sumArray)
      }
 
      if(sumArray[1]== "/"){
@@ -32,6 +30,16 @@ class Blunt {
    let total = parseInt(sumArray[0]) + parseInt(sumArray[2])
      return [sum ,total]
   }
+  minus(sum,sumArray){
+    let total = parseInt(sumArray[0]) - parseInt(sumArray[2])
+      return [sum ,total]
+   }
+
+   multiple(sum,sumArray){
+    let total = parseInt(sumArray[0]) * parseInt(sumArray[2])
+      return [sum ,total]
+   }
+
 
 
 
