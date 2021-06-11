@@ -19,10 +19,16 @@ describe("Blunt", function() {
     it ("5 - 4 returns ['5 - 4', 1]",function() {
       expect(blunt.Calculator("5 - 4")).toEqual(["5 - 4", 1]);
     })
-
- 
     
-})
+  }) 
+
+  describe('Times tests ', function() {
+    it ("3 * 3 returns ['3 * 3', 9]",function() {
+      expect(blunt.Calculator("3 * 3")).toEqual(["3 * 3", 9]);
+    })
+    
+  }) 
+
 
   
 
