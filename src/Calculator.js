@@ -1,8 +1,6 @@
 class Blunt {
 
-  Calculator(sum){
-    // "1 + 1"
-
+  calculator(sum){
     let sumArray= sum.split(" ")
     let total
     if(sumArray[1]== "+"){
@@ -19,10 +17,9 @@ class Blunt {
 
      if(sumArray[1]== "/"){
       total = parseInt(sumArray[0]) / parseInt(sumArray[2])
-      return [sum ,total]
+      return this.division(sum,sumArray)
      }
-    
-
+  
   }
 
 
@@ -37,6 +34,11 @@ class Blunt {
 
    multiple(sum,sumArray){
     let total = parseInt(sumArray[0]) * parseInt(sumArray[2])
+      return [sum ,total]
+   }
+
+   division(sum,sumArray){
+    let total = parseInt(sumArray[0]) / parseInt(sumArray[2])
       return [sum ,total]
    }
 
