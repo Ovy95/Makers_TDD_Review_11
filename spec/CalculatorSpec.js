@@ -55,16 +55,17 @@ describe("Blunt", function() {
         expect(blunt.calculator("20 - 10 - 5")).toEqual(["20 - 10 - 5", 5]);
       })
 
-
     }) 
   
     describe('multiple tests ', function() {
-      it ("20 - 10 - 5    returns   ['20 - 10 - 5', 5]",function() {
-        expect(blunt.calculator("20 - 10 - 5")).toEqual(["20 - 10 - 5", 5]);
+      it ("2 * 2 * 2    returns   ['2 * 2 * 2', 8]",function() {
+        expect(blunt.calculator("2 * 2 * 2")).toEqual(['2 * 2 * 2', 8]);
       })
     }) 
     describe('division tests ', function() {
-    
+      it ("27 / 3 / 3   returns   27 / 3 / 3 ,3",function() {
+        expect(blunt.calculator("27 / 3 / 3")).toEqual(['27 / 3 / 3', 3]);
+      })
     }) 
   })
   

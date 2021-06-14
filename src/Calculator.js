@@ -12,11 +12,15 @@ class Blunt {
        }
   
        if(sumArray[1]== "*"){
-         return this.multiple(sum,sumArray)
+        total += this.multiple(sumArray)
+         sumArray.splice(0, 3, total)
+        index = 0
        }
   
        if(sumArray[1]== "/"){
-        return this.division(sum,sumArray)
+        total += this.division(sumArray)
+        sumArray.splice(0, 3, total)
+        index = 0
        }
 
       if(sumArray[index]== "+"){
@@ -42,14 +46,14 @@ class Blunt {
     return total
    }
 
-   multiple(sum,sumArray){
+   multiple(sumArray){
     let total = parseInt(sumArray[0]) * parseInt(sumArray[2])
-    return [sum,total]
+    return total
    }
 
-   division(sum,sumArray){
+   division(sumArray){
     let total = parseInt(sumArray[0]) / parseInt(sumArray[2])
-    return [sum,total]
+    return total
    }
 
 
