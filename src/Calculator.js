@@ -18,7 +18,7 @@ class Blunt {
        }
   
        if(sumArray[1]== "/"){
-        total += this.division(sumArray)
+        total = this.division(sumArray)
         sumArray.splice(0, 3, total)
         index = 0
        }
@@ -30,6 +30,7 @@ class Blunt {
       }
       
       if (index == sumArray.length -1){
+       console.log( [sum , sumArray[0]])
       return [sum , sumArray[0]]
       }
     }
