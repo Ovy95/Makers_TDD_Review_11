@@ -3,8 +3,9 @@
 Update this with the Review task
 Calucation of strings which will return sum of the values 
 ```
-Input       ||        Output 
 1st Phase of Tests
+Input       ||        Output 
+
 
 1st Test Addition 
 ("1 + 1")   ||        ["1 + 1", 2]
@@ -17,14 +18,14 @@ Input       ||        Output
 
 
 4th Tests Division
-("16 / 4")    ||        ["16 / 4", 4]
+("16 / 4")  ||        ["16 / 4", 4]
 ```
 
 ```
 
 2nd Phase of testing more then one operator involved
 Input              ||        Output 
-2st Phase of Tests
+
 
 Addition 
 ("1 + 2 + 3")      ||        ["1 + 2 + 3", 6]
